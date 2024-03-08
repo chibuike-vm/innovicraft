@@ -443,12 +443,12 @@ nav {
 
 .close-button {
     align-self: flex-end;
-    padding: 1rem;
+    padding-right: 1rem;
 }
 
-.sub-nav-container div a {
+div a {
     font-size: 1.2rem;
-    color: #701a75;
+    color: #f50057;
 }
 
 .sub-nav-container div h3,
@@ -468,6 +468,10 @@ h1 {
     font-size: 1.5rem;
 }
 
+.top-header-div h1 {
+    letter-spacing: 0.1rem;
+}
+
 .title-span {
     color: #f50057;
 }
@@ -478,7 +482,7 @@ h2 {
 }
 
 h3 {
-    font-size: 0.9rem;
+    font-size: 0.95rem;
 }
 
 main article h1 {
@@ -515,12 +519,12 @@ button {
 
 @media only screen and (width >= 390px) {
     h2 {
-        font-size: 1.2rem;
+        font-size: 1.25rem;
         margin-bottom: 0;
     }
 
     h3 {
-        font-size: 1.1rem;
+        font-size: 1.15rem;
         cursor: pointer;
     }
 
@@ -589,7 +593,7 @@ button {
     .large-screen-menu-items section div h2 {
         text-transform: capitalize;
         text-align: end;
-        margin-bottom: 1.5rem;
+        margin-bottom: 15.936px;
     }
 
     .sublinks {
