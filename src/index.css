@@ -386,13 +386,14 @@ html {
 }
 
 body,
-html,
-#root {
+html {
     background-image: linear-gradient(to right, #fae8ff, #f5d0fe, #f0abfc);
 }
 
 #root {
     height: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .large-screen-menu-items section,
@@ -426,6 +427,7 @@ nav {
     flex-direction: column;
     gap: 0.2rem;
     padding: 1rem;
+    overflow-y: scroll;
 }
 
 .sub-nav-container {
@@ -447,8 +449,8 @@ nav {
 }
 
 div a {
-    font-size: 1.2rem;
-    color: #f50057;
+    color: black;
+    text-decoration: none;
 }
 
 .sub-nav-container div h3,
@@ -477,12 +479,13 @@ h1 {
 }
 
 h2 {
-    font-size: 1.05rem;
+    font-size: 1rem;
     margin-bottom: 0;
 }
 
 h3 {
-    font-size: 0.95rem;
+    font-size: 0.8rem;
+    cursor: pointer;
 }
 
 main article h1 {
@@ -496,19 +499,17 @@ main article p {
 
 img {
     display: block;
-    width: 60%;
-    text-align: center;
+    width: 90%;
     height: auto;
-    margin: 0 auto;
 }
 
 .svg-div-container {
     display: flex;
-    flex-direction: column;
-    width: 90%;
+    width: 100%;
     gap: 1rem;
     align-items: center;
     margin: 0 auto;
+    justify-content: space-around;
 }
 
 button {
@@ -517,23 +518,38 @@ button {
     border-color: transparent;
 }
 
-@media only screen and (width >= 390px) {
+.icon-button {
+    font-size: 1.2rem;
+    color: #f50057;
+}
+
+@media only screen and (width > 280px) {
+    h2 {
+        font-size: 1.05rem;
+    }
+
+    h3 {
+        font-size: 0.88rem;
+    }
+}
+
+@media only screen and (width > 375px) {
     h2 {
         font-size: 1.25rem;
-        margin-bottom: 0;
     }
 
     h3 {
         font-size: 1.15rem;
-        cursor: pointer;
-    }
-
-    nav {
-        gap: 1rem;
     }
 }
 
-@media only screen and (width >= 768px) {
+@media only screen and (width > 539px) {
+    img {
+        width: 75%;
+    }
+}
+
+@media only screen and (width > 767px) {
     .nav {
         display: none;
     }
@@ -549,7 +565,7 @@ button {
     }
 
     main article h1 {
-        font-size: 4rem;
+        font-size: 3rem;
     }
 
     .top-header-div {
@@ -632,10 +648,21 @@ button {
     }
 
     .svg-div-container {
-        flex-direction: row;
+        justify-content: space-evenly;
     }
 
-    div > a {
+    .icon-button {
         font-size: 1.4rem;
+    }
+
+    img {
+        width: 55%;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (width > 900px) {
+    img {
+        width: 45%;
     }
 }
