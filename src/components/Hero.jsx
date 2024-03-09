@@ -11,7 +11,7 @@ const Hero = () => {
             <article>
                 <h1>
                     Put in the Work,
-                    <br /> Dreams Come Through
+                    <br /> Dreams Come True!
                 </h1>
             </article>
             <article>
