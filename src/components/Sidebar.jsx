@@ -16,8 +16,15 @@ const Sidebar = () => {
 
                                 return (
                                     <div key={id}>
-                                        <a href={url}>{icon}</a>
-                                        <h3>{label}</h3>
+                                        <button
+                                            type="button"
+                                            className="icon-button"
+                                        >
+                                            {icon}
+                                        </button>
+                                        <a href={url}>
+                                            <h3>{label}</h3>
+                                        </a>
                                     </div>
                                 );
                             })}
